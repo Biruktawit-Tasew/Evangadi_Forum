@@ -31,6 +31,8 @@ title TEXT NOT NULL,
 description TEXT NOT NULL,
 tag VARCHAR(255),
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+likes INT(11),
+dislikes INT(11)
 PRIMARY KEY (id,question_id),
 FOREIGN KEY (user_id) REFERENCES registration(user_id));
 
