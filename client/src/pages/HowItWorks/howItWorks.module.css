@@ -1,0 +1,245 @@
+.howItWorksContainer {
+    max-width: 1200px; /* Slightly narrower for a more focused look */
+    margin: 40px auto;
+    padding: 30px; /* Reduced padding */
+    font-family: "Poppins", sans-serif;
+    color: #344767;
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 8px; /* Subtle rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Lighter shadow */
+  }
+  
+  .sectionTitle {
+    font-size: 2.2rem; /* Slightly smaller for a cleaner look */
+    font-weight: 600;
+    margin-bottom: 40px; /* Reduced margin */
+    text-align: center;
+    color: #344767;
+    letter-spacing: 0; /* Removed letter-spacing for simplicity */
+    position: relative;
+  }
+  
+  .sectionTitle::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px; /* Shorter underline */
+    height: 4px; /* Thinner underline */
+    background-color: var(--old-button-color);
+    border-radius: 10px;
+  }
+  
+  .stepsGrid {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(280px, 1fr)
+    ); /* Adjusted for better spacing */
+    gap: 20px; /* Reduced gap for a tighter layout */
+  }
+  
+  .stepContainer {
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px; /* Reduced padding */
+    background-color: #f9fafb; /* Very light gray background */
+    border-radius: 6px; /* Subtle rounded corners */
+    box-shadow: none; /* Removed shadow for minimalism */
+    border: 1px solid #e5e7eb; /* Light border for definition */
+    transition: none; /* Removed hover transition for simplicity */
+  }
+  
+  .stepContainer:hover {
+    transform: none; /* Removed hover effect */
+    box-shadow: none; /* Removed hover effect */
+  }
+  
+  .stepIconWrapper {
+    margin-right: 16px; /* Reduced margin */
+    font-size: 2rem; /* Slightly smaller icons */
+    display: flex;
+    align-items: center;
+  }
+  
+  .stepContent {
+    flex: 1;
+  }
+  
+  .stepContent h3 {
+    font-size: 1.5rem; /* Smaller heading */
+    font-weight: 500;
+    margin-bottom: 8px; /* Reduced margin */
+    color: #344767; /* Consistent color */
+  }
+  
+  .stepContent p {
+    text-align: start;
+    font-size: 1rem; /* Smaller text */
+    line-height: 1.5; /* Slightly tighter line height */
+    color: #6b7280; /* Softer gray for text */
+  }
+  
+  .InfoContainer {
+    margin-top: 40px; /* Reduced margin */
+    display: flex;
+    flex-direction: column; /* Stack vertically for a cleaner look */
+    gap: 20px; /* Reduced gap */
+  }
+  
+  .infoSection {
+    padding: 20px; /* Reduced padding */
+    background-color: #ffffff; /* White background */
+    border-radius: 6px; /* Subtle rounded corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Lighter shadow */
+    border: 1px solid #e5e7eb; /* Light border for definition */
+  }
+  
+  .infoSection h3 {
+    font-size: 1.6rem; /* Smaller heading */
+    font-weight: 500;
+    margin-bottom: 16px; /* Reduced margin */
+    color: #344767;
+    position: relative;
+  }
+  
+  .infoSection h3::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 80px; /* Shorter underline */
+    height: 3px; /* Thinner underline */
+    background-color: var(--old-button-color);
+    border-radius: 10px;
+  }
+  
+  .infoSection p {
+    padding: 20px 50px 0 10px;
+    text-align: start;
+    font-size: 1rem; /* Smaller text */
+    line-height: 1.5; /* Tighter line height */
+    color: #6b7280; /* Softer gray for text */
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .howItWorksContainer {
+      padding: 20px; /* Reduced padding on mobile */
+    }
+  
+    .sectionTitle {
+      font-size: 1.8rem; /* Smaller heading on mobile */
+      margin-bottom: 30px;
+    }
+  
+    .stepsGrid {
+      grid-template-columns: 1fr; /* Single column on mobile */
+      gap: 15px; /* Smaller gap */
+    }
+  
+    .stepContainer {
+      flex-direction: column;
+      align-items: center;
+      text-align: start;
+      padding: 15px; /* Reduced padding */
+    }
+  
+    .stepIconWrapper {
+      margin-right: 0;
+      margin-bottom: 12px; /* Adjusted margin */
+    }
+  
+    .infoSection {
+      padding: 15px; /* Reduced padding on mobile */
+    }
+  
+    .infoSection h3 {
+      font-size: 1.4rem; /* Smaller heading on mobile */
+    }
+  }
+  
+  /* The following CSS remains untouched as per your instructions */
+  .outerContainer {
+    display: flex;
+  }
+  
+  .Rightcontainer {
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Rightcontainer img {
+    max-width: 580px;
+    margin-top: 100px;
+    border-radius: 30px;
+    transform: rotateY(-30deg);
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease-in-out;
+  }
+  
+  .Rightcontainer img:hover {
+    transform: rotateY(-38deg);
+  }
+  
+  .container {
+    text-align: start;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 100px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #344767;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #344767;
+    margin-bottom: 20px;
+  }
+  
+  .steps2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon {
+    font-size: 2rem;
+    margin-right: 20px;
+  }
+  
+  .stepIconWrapper svg {
+    color: var(--old-button-color);
+  }
+  
+  .text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  @media (max-width: 950px) {
+    .Rightcontainer {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,45 @@
+.about_section {
+  flex: 1;
+  padding: 60px 20px 20px 20px;
+  /* margin: auto; */
+  width: 40vw;
+  height: 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about_section h3 {
+  color: var(--secondary-color);
+  width: 850px;
+}
+.about_section h1 {
+  font-size: 42px;
+  color: #cc3900;
+  margin: 0px 0px 10px;
+  position: relative;
+  padding-top: 10px;
+  background: linear-gradient(310deg, #000000, #e33f00);/*applies a gradient from left to right with two colors:*/
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.about_section p {
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  color: #656565;
+  margin: 20px 0px 30px;
+  line-height: 28px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.about_section .button {
+  width: 17vw;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #fe8402;
+  padding: 12px 30px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+}
